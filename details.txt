@@ -1,0 +1,5 @@
+The HEX codes of the colors used.
+
+Cyan - #00ffff
+Navy Blue - #000080
+Rust Orange - #cc5500
