@@ -14,6 +14,12 @@ VERSION:	Versoin Number
 [TABLE OF CONTENTS]
 -------------------------------------------------------------------*/
 /*  typography */
+/* Changes
+21 Apr 2021: 
+    Change color #cc5500 with orange #fd7e14;
+    Change btn-primary color to #fd7e14
+
+*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
 @font-face {
   font-family: 'futura-bold';
@@ -164,7 +170,7 @@ h6, .h6 {
 }
 
 .btn-primary {
-  background: #000080;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -173,7 +179,7 @@ h6, .h6 {
 }
 
 .btn-primary:active {
-  background: #000080 !important;
+  background: #fd7e14 !important;
   color: #000080;
 }
 
@@ -182,30 +188,30 @@ h6, .h6 {
 }
 
 .btn-primary:hover {
-  background: #000080;
-  color: #000080;
+  background: #fd7e14;
+  color: #fd7e14;
 }
 
 .btn-primary:not(:disabled):not(.disabled).active,
 .btn-primary:not(:disabled):not(.disabled):active,
 .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #000080;
+  background-color: #fd7e14;
   border-color: #000080;
 }
 
 .btn-secondary {
   background: #fff;
-  color: #000080;
+  color: #fd7e14;
   border: 1px solid #fff;
 }
 
 .btn-secondary::before {
-  background: #000080;
+  background: #fd7e14;
 }
 
 .btn-secondary:active {
-  background: #000080;
+  background: #fd7e14;
   color: #fff;
   border: 1px solid #fff;
 }
@@ -217,8 +223,8 @@ h6, .h6 {
 }
 
 .btn-primary-outline {
-  border: 1px solid #000080;
-  color: #000080;
+  border: 1px solid #fd7e14;
+  color: #fd7e14;
   background: transparent;
 }
 
@@ -227,12 +233,12 @@ h6, .h6 {
 }
 
 .btn-primary-outline:hover {
-  background: #000080;
-  color: #000080;
+  background: #fd7e14;
+  color: #000fd7e14080;
 }
 
 .btn-primary-outline:active {
-  background: #000080;
+  background: #fd7e14;
   color: #fff;
 }
 
@@ -540,36 +546,36 @@ textarea.form-control {
 }
 
 .navigation {
-  background: linear-gradient(to right, transparent 50%, #cc5500 50%);
+  background: linear-gradient(to right, transparent 50%, #fd7e14 50%);
   transition: .2s ease;
 }
 
 @media (max-width: 991px) {
   .navigation {
-    background: #cc5500;
+    background: #fd7e14;
   }
 }
 
 @media (max-width: 991px) {
   .navbar-collapse {
-    background: #cc5500;
+    background: #fd7e14;
   }
 }
 
 .navbar-nav {
   padding-left: 50px;
-  background: #cc5500;
+  background: #fd7e14;
 }
 
 @media (max-width: 991px) {
   .navbar-nav {
     padding-left: 0;
-    background: #cc5500;
+    background: #fd7e14;
   }
 }
 
 .nav-bg {
-  background-color: #cc5500;
+  background-color: #fd7e14;
 }
 
 .nav-item {
@@ -650,7 +656,7 @@ link:focus,
 
 .navbar .dropdown-menu {
   box-shadow: 0px 3px 9px 0px rgba(0, 0, 0, 0.12);
-  border-bottom: 5px solid #cc5500;
+  border-bottom: 5px solid #fd7e14;
   padding: 15px;
   top: 96px;
   border-radius: 0;
@@ -733,7 +739,7 @@ link:focus,
 
 .hero-slider .prevArrow:hover,
 .hero-slider .nextArrow:hover {
-  color: #cc5500;
+  color: #fd7e14;
 }
 
 .hero-slider .prevArrow {
@@ -757,7 +763,7 @@ link:focus,
 }
 
 .hero-slider .slick-dots li.slick-active button {
-  background: #cc5500;
+  background: #fd7e14;
 }
 
 .hero-slider .slick-dots li button {
