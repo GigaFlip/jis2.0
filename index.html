@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Educenter</title>
+  <title>Jay i School</title>
 
   <!-- mobile responsive meta -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -27,8 +27,9 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!--Favicon-->
-  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
-  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon"> -->
+  <!-- <link rel="icon" href="images/favicon.png" type="image/x-icon"> -->
 
 </head>
 
@@ -44,7 +45,8 @@
 <!-- header -->
 <header class="fixed-top header">
   <!-- top header -->
-  <div class="top-header py-2" style="background-color: #00ffff;">
+  <!-- <div class="top-header py-2" style="background-color: #00ffff;"> -->
+  <div class="top-header py-2" style="background-color: white">
     <div class="container">
       <div class="row no-gutters">
         <div class="col-lg-4 text-center text-lg-left">
@@ -52,19 +54,15 @@
           <ul class="list-inline d-inline">
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://www.facebook.com/jayschool.edu.in/"><i class="ti-facebook"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://twitter.com/jayischool"><i class="ti-twitter-alt"></i></a></li>
-            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
             <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="https://g.page/jayischool"><i class="ti-location-pin"></i></a></li>
+            <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="mailto:info@jayschool.edu.in"><i class="ti-email"></i></a></li>
           </ul>
         </div>
         <div class="col-lg-8 text-center text-lg-right">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
-          <!--
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
-          -->
+            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#noticeModal">notice</a></li>
             <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-            <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
+            <!-- <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li> -->
           </ul>
         </div>
       </div>
@@ -91,7 +89,7 @@
             <li class="nav-item">
               <a class="nav-link" href="admission.html">Admission</a>
             </li>
-			<li class="nav-item">
+			      <li class="nav-item">
               <a class="nav-link" href="education.html">Education</a>
             </li>
             <li class="nav-item">
@@ -108,18 +106,18 @@
 </header>
 <!-- /header -->
 <!-- Modal -->
-<div class="modal fade" id="signupModal" tabindex="-1" role="dialog" aria-hidden="true">
+<div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content rounded-0 border-0 p-4">
             <div class="modal-header border-0">
-                <h3>Register</h3>
+                <h3>Admissions Open!</h3>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="login">
-                    <form action="#" class="row">
+                    <!-- <form action="#" class="row">
                         <div class="col-12">
                             <input type="text" class="form-control mb-3" id="signupPhone" name="signupPhone" placeholder="Phone">
                         </div>
@@ -133,10 +131,14 @@
                             <input type="password" class="form-control mb-3" id="signupPassword" name="signupPassword" placeholder="Password">
                         </div>
                         <div class="col-12">
-                            <button type="submit" class="btn btn-primary">SIGN UP</button>
+                            
                         </div>
-                    </form>
+                    </form> -->
+                    <img src="images/notice/July2021.png" class="img-fluid" alt="2021 Admissions Open. Introducing online classes for pre-KG, LKG and UKG. Don't let the pandemic hinder your child's education. Rs. 10,000/- only (including books)">
                 </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -180,11 +182,9 @@
         <div class="row">
           <div class="col-md-8">
             <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
+            <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Introducing online classes for pre-KG, LKG and UKG. Don't let the pandemic hinder your child's education. <b>Rs. 10,000/- only </b>(including books)</p>
+            <!-- <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".4">Rs. 10,000/- only (including books)</p> -->
+            <a href="admission.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
           </div>
         </div>
       </div>
@@ -193,11 +193,8 @@
         <div class="row">
           <div class="col-md-8">
             <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
+            <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".4">2021 - 2022 <b>Admissions Open!</b> Register online at <i>jayschool.edu.in/admission</i></p>
+            <a href="admission.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
           </div>
         </div>
       </div>
@@ -206,11 +203,8 @@
         <div class="row">
           <div class="col-md-8">
             <h1 class="text-white" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".1">Your bright future is our mission</h1>
-            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-              tempor
-              incididunt ut labore et
-              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer</p>
-            <a href="contact.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
+            <p class="text-muted mb-4" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="fadeInUp" data-delay-in=".4"> Our goal is to equip each child with the confidence to dream, the knowledge to understand those dreams and the perseverance required to pursue them. If you have any questions, please write to us at admissions@jayschool.edu.in</p>
+            <a href="admission.html" class="btn btn-primary" data-animation-out="fadeOutDown" data-delay-out="5" data-duration-in=".3" data-animation-in="zoomIn" data-delay-in=".7">Apply now</a>
           </div>
         </div>
       </div>
@@ -230,7 +224,7 @@
         <div class="row feature-blocks bg-gray justify-content-between">
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="ti-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholarship News</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad</p>
           </div>
@@ -248,7 +242,7 @@
           </div>
           <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
             <i class="ti-write mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admission Now</h3>
+            <h3 class="mb-xl-4 mb-lg-3 mb-4">Admissions Open</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
               et dolore magna aliqua. Ut enim ad</p>
           </div>
@@ -265,12 +259,16 @@
     <div class="row align-items-center">
       <div class="col-md-6 order-2 order-md-1">
         <h2 class="section-title">About Jay i School</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat </p>
-        <p>cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem</p>
+        <p>Jay International School (JIS) is a novel initiative from Jay Educational Trust with a vision to impart quality education to children of Tuticorin District.</p>
+        <p>Jay Educational Trust was founded by our chairman, Thiru. J. Subbiah, with a vision to bestow quality education to all the children. Jay Group of Schools has 40 years of experience in the field of education and is one of the leading educational groups in Salem.</p>
         <a href="about.html" class="btn btn-primary-outline">Learn more</a>
       </div>
       <div class="col-md-6 order-1 order-md-2 mb-4 mb-md-0">
-        <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image">
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ghr6P96MSF0"></iframe>
+        </div>
+        <!-- <a class="play-btn venobox" href="https://youtu.be/ghr6P96MSF0" data-vbtype="video"><i class="ti-control-play"></i></a> -->
+        <!-- <img class="img-fluid w-100" src="images/about/about-us.jpg" alt="about image"> //www.youtube.com/embed/zB4I68XVPzQ -->
       </div>
     </div>
   </div>
@@ -282,15 +280,17 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-sm-4 position-relative success-video">
-        <a class="play-btn venobox" href="https://youtu.be/nA1Aqp0sPQo" data-vbtype="video">
-          <i class="ti-control-play"></i>
+        <a class="play-btn venobox" href="https://youtu.be/aW5la8KHryI" data-vbtype="video">
+           <i class="ti-control-play"></i>
+          <!-- Youtube -->
         </a>
       </div>
       <div class="col-lg-6 col-sm-8">
-        <div class="cyan p-5">
-          <h2 class="section-title">Success Stories</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat.</p>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris</p>
+        <div class="bg-white p-5">
+          <h2 class="section-title">E-DAC Partnership</h2>
+          <p>E-DAC Digital is a Technology Integrated System that encourages students to embrace rapidly changing worlds and make them ready for tomorrow by building 21st-century skills.</p>
+          <p>We believe in becoming a student’s best friend and a true growth partner in their most crucial learning years by providing a hybrid learning platform.</p>
+          <p>We are an amalgamation of technology, media, and curriculum for creating a seamless transformational impact on each and every child’s learning curve. We emphasize conceptual building, critical thinking, and overall personality development through our highly researched, scientific and interesting teaching-learning approaches.</p>
         </div>
       </div>
     </div>
@@ -308,9 +308,13 @@
           <!-- logo -->
           <a class="logo-footer" href="index.html"><img class="img-fluid mb-4" src="images/logo.png" alt="logo"></a>
           <ul class="list-unstyled">
-            <li class="mb-2"> Sathankulam Main Rd, Nangaimozhi, Megnanapuram, Tiruchendur Taluk, Tamil Nadu 628210</li>
-            <li class="mb-2">+91 93846 12345</li>
-            <li class="mb-2">info@jayschool.edu.in</li>
+            <li class="mb-2"> 
+              <address>Sathankulam Main Rd, Nangaimozhi<br> Megnanapuram, Tiruchendur Taluk<br> Tamil Nadu 628210
+              </address>
+            </li>
+            <!-- <a class="text-color mr-3" href="callto:+919384612345"><strong>CALL</strong> +91 93846 12345</a> -->
+            <li class="mb-2"><a href="callto:+919384612345">+91 93846 12345</a></li>
+            <li class="mb-2"><a href="mailto:info@jayschool.edu.in">info@jayschool.edu.in</a></li>
           </ul>
         </div>
         <!-- company -->
@@ -318,7 +322,7 @@
           <h4 class="text-white mb-5">COMPANY</h4>
           <ul class="list-unstyled">
             <li class="mb-3"><a class="text-color" href="about.html">About Us</a></li>
-            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teacher</a></li>
+            <li class="mb-3"><a class="text-color" href="teacher.html">Our Teachers</a></li>
             <li class="mb-3"><a class="text-color" href="contact.html">Contact</a></li>
             <li class="mb-3"><a class="text-color" href="blog.html">Blog</a></li>
           </ul>
@@ -361,19 +365,24 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-7 text-sm-left text-center">
-          <p class="mb-0">Copyright
+          <p class="mb-0">Copyright &copy;
             <script>
               var CurrentYear = new Date().getFullYear()
               document.write(CurrentYear)
             </script> 
-            Jay International School © themefisher</p>
+            Themefisher, Jay International School</p>
         </div>
         <div class="col-sm-5 text-sm-right text-center">
           <ul class="list-inline">
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li>
-            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://www.facebook.com/jayschool.edu.in/"><i class="ti-facebook"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://twitter.com/jayischool"><i class="ti-twitter-alt"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin"></i></a></li>
+            <li class="list-inline-item"><a class="d-inline-block p-2" href="https://g.page/jayischool"><i class="ti-location-pin"></i></a></li>
+
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-facebook text-primary"></i></a></li> -->
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-twitter-alt text-primary"></i></a></li> -->
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-linkedin text-primary"></i></a></li> -->
+            <!-- <li class="list-inline-item"><a class="d-inline-block p-2" href="#"><i class="ti-instagram text-primary"></i></a></li> -->
           </ul>
         </div>
       </div>
@@ -400,6 +409,14 @@
 
 <!-- Main Script -->
 <script src="js/script.js"></script>
+<script type="text/javascript">
+  $(window).on('load', function() {
+    if (document.cookie.indexOf("ModalShown=true")<0) {
+      $('#noticeModal').modal('show');
+      document.cookie = "ModalShow=true; expires=Tue, 31 Aug 2021 23:59:59 GMT; path=/";
+    }
+  });
+</script>
 
 </body>
 </html>

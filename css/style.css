@@ -17,7 +17,10 @@ VERSION:	Versoin Number
 /* Changes
 21 Apr 2021: 
     Change color #cc5500 with orange #fd7e14;
-    Change btn-primary color to #fd7e14
+    Change btn-primary color to #fd7e14;
+
+16 Jul 2021:
+    Change .text-primary from 000080 to f8f8f8
 
 */
 @import url("https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700");
@@ -234,7 +237,7 @@ h6, .h6 {
 
 .btn-primary-outline:hover {
   background: #fd7e14;
-  color: #000fd7e14080;
+  color: #000080;
 }
 
 .btn-primary-outline:active {
@@ -387,7 +390,8 @@ a h4:hover {
 }
 
 .text-primary {
-  color: #000080 !important;
+  color: #f8f8f8 !important;
+  /* color: #000080 !important; */
 }
 
 .text-color {
