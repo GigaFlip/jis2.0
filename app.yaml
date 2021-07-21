@@ -1,0 +1,58 @@
+runtime: php55
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /css
+  static_dir: css
+  
+- url: /images
+  static_dir: images
+
+- url: /js
+  static_dir: js
+
+- url: /scss
+  static_dir: scss
+
+- url: /fonts
+  static_dir: fonts
+
+- url: /plugins
+  static_dir: plugins
+
+- url: /
+  script: index.html
+  secure: always
+
+- url: /index.html
+  script: index.html
+  secure: always
+  
+- url: /admission.html
+  script: admission.html
+  secure: always
+
+- url: /facilities.html
+  script: facilities.html
+  secure: always
+
+- url: /newsgallery.html
+  script: newsgallery.html
+  secure: always
+
+- url: /education.html
+  script: education.html
+  secure: always
+
+- url: /about.html
+  script: about.html
+  secure: always
+
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+- url: /.*
+  script: index.html
+  secure: always
