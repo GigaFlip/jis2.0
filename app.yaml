@@ -49,6 +49,10 @@ handlers:
   script: about.html
   secure: always
 
+- url: /calendar.html
+  script: calendar.html
+  secure: always
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
