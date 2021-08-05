@@ -37,8 +37,8 @@ handlers:
   script: facilities.html
   secure: always
 
-- url: /newsgallery.html
-  script: newsgallery.html
+- url: /gallery.html
+  script: gallery.html
   secure: always
 
 - url: /education.html
@@ -51,6 +51,10 @@ handlers:
 
 - url: /calendar.html
   script: calendar.html
+  secure: always
+
+- url: /documents.html
+  script: documents.html
   secure: always
 
 - url: /favicon\.ico
