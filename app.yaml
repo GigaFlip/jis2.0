@@ -21,6 +21,9 @@ handlers:
 - url: /plugins
   static_dir: plugins
 
+- url: /favicon
+  static_dir: favicon
+
 - url: /
   script: index.html
   secure: always
@@ -33,7 +36,15 @@ handlers:
   script: admission.html
   secure: always
 
+- url: /admission
+  script: admission.html
+  secure: always
+
 - url: /facilities.html
+  script: facilities.html
+  secure: always
+
+- url: /facilities
   script: facilities.html
   secure: always
 
@@ -41,12 +52,20 @@ handlers:
   script: gallery.html
   secure: always
 
+- url: /gallery
+  script: gallery.html
+  secure: always
+
 - url: /education.html
   script: education.html
   secure: always
 
+- url: /education
+  script: education.html
+  secure: always
+
 - url: /about.html
-  script: about.html
+  script: index.html
   secure: always
 
 - url: /calendar.html
