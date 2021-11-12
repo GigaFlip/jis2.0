@@ -1,3 +1,4 @@
 # exclude all files ending in .old
 **/*.old
 **/old*
+.vscode
