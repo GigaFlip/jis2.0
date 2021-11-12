@@ -80,6 +80,11 @@ handlers:
   script: academic-docs.html
   secure: always
 
+- url: /test.html
+  script: test.html
+  secure: always
+
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
