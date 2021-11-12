@@ -76,6 +76,10 @@ handlers:
   script: documents.html
   secure: always
 
+- url: /academic-docs.html
+  script: academic-docs.html
+  secure: always
+
 - url: /favicon\.ico
   static_files: favicon.ico
   upload: favicon\.ico
