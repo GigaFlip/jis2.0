@@ -114,6 +114,13 @@ h6, .h6 {
   }
 }
 
+/* Modal style */
+
+.modal-dialog, .modal-content {
+  margin: 1vh auto 0px auto;
+  padding: 0px !important;
+}
+
 /* Button style */
 .btn {
   font-size: 16px;
