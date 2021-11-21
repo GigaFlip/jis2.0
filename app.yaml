@@ -84,6 +84,13 @@ handlers:
   script: test.html
   secure: always
 
+- url: /circulars.html
+  script: circulars.html
+  secure: always
+
+- url: /circulars
+  script: circulars.html
+  secure: always
 
 - url: /favicon\.ico
   static_files: favicon.ico

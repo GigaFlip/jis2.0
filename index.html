@@ -84,8 +84,8 @@
           </div>
           <div class="col-lg-8 text-center text-lg-right">
             <ul class="list-inline">
-              <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
-                  data-toggle="modal" data-target="#noticeModal">Circulars</a></li>
+              <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="https://jayischool.notion.site"
+                target="_blank" rel="noopener noreferrer">Circulars</a></li>
               <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
                   data-toggle="modal" data-target="#loginModal">login</a></li>
             </ul>
@@ -432,7 +432,7 @@
   <script type="text/javascript">
     $(window).on('load', function () {
       if (document.cookie.indexOf("ModalShown=true") < 0) {
-        $('#noticeModal').modal('show');
+        // $('#noticeModal').modal('show');
         var expires = (new Date(Date.now() + 1000 * 60 * 60)).toUTCString();
         document.cookie = "ModalShown=true; expires=" + expires + ";";
         // Sat, 31 Dec 2022 23:59:59 UTC
