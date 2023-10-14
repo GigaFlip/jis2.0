@@ -87,6 +87,8 @@
               <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="https://jayischool.notion.site"
                 target="_blank" rel="noopener noreferrer">Circulars</a></li>
               <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
+                data-toggle="modal" data-target="#noticeModal">Notice</a></li>
+              <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#"
                   data-toggle="modal" data-target="#loginModal">login</a></li>
             </ul>
           </div>
@@ -136,10 +138,15 @@
   <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
       <div class="modal-content rounded-0 border-0">
+        <div class="modal-header border-0">
+          <h3>Admissions Open!</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
         <div class="modal-body">
-            <!-- <embed src="https://docs.google.com/document/d/1cOm24BT_kdeo5xD-zbYp-x5K44jM7w32hRERDm22b2c/preview"  -->
-            <embed src="https://docs.google.com/document/d/1cOm24BT_kdeo5xD-zbYp-x5K44jM7w32hRERDm22b2c/edit?usp=sharing"
-              width="100%" height="600px" type="application/pdf" frameBorder="0" />
+          <img src="images/notice/Oct2023.webp" class="img-fluid"
+            alt="2023 Vijayadasami Admissions Open for pre-KG, LKG and UKG.">
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal">Close</button>
@@ -432,10 +439,10 @@
   <script type="text/javascript">
     $(window).on('load', function () {
       if (document.cookie.indexOf("ModalShown=true") < 0) {
-        // $('#noticeModal').modal('show');
+        $('#noticeModal').modal('show');
         var expires = (new Date(Date.now() + 1000 * 60 * 60)).toUTCString();
         document.cookie = "ModalShown=true; expires=" + expires + ";";
-        // Sat, 31 Dec 2022 23:59:59 UTC
+        // 31 Dec 2023 23:59:59 UTC
       }
     });
   </script>
