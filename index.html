@@ -135,23 +135,33 @@
   <!-- /header -->
 
   <!-- Modal -->
-  <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="noticeModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
-      <div class="modal-content rounded-0 border-0">
-        <div class="modal-header border-0">
-          <h3>Admissions Open!</h3>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
+        <div class="modal-content rounded-0 border-0">
+            <div class="modal-header border-0">
+                <h3 id="noticeModalLabel">Notice</h3>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="text-center loading-spinner">
+                    <div class="spinner-border text-primary" role="status">
+                        <span class="sr-only">Loading...</span>
+                    </div>
+                </div>
+                <iframe src="images/notice/AISSEE2025.html" 
+                        width="100%" 
+                        height="500px" 
+                        frameborder="0"
+                        title="AISSEE 2025 Notice"
+                        onload="this.previousElementSibling.style.display='none';">
+                </iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal">Close</button>
+            </div>
         </div>
-        <div class="modal-body">
-          <img src="images/notice/Oct2023.webp" class="img-fluid"
-            alt="2023 Vijayadasami Admissions Open for pre-KG, LKG and UKG.">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary mr-auto" data-dismiss="modal">Close</button>
-        </div>
-      </div>
     </div>
   </div>
   <!-- Modal -->
@@ -196,8 +206,8 @@
               <h1 class="text-white" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
                 data-animation-in="fadeInLeft" data-delay-in=".1">Your bright future is our mission</h1>
               <p class="text-muted mb-4" data-animation-out="fadeOutRight" data-delay-out="5" data-duration-in=".3"
-                data-animation-in="fadeInLeft" data-delay-in=".4">Introducing Vijayadasami Admissions for pre-KG, LKG and UKG.
-                Kick start your child's education.</p>
+                data-animation-in="fadeInLeft" data-delay-in=".4">Give your child the best start in education. Admissions open for Pre-KG, LKG, and UKG. 
+              </p>
               <a href="admission.html" class="btn btn-primary" data-animation-out="fadeOutRight" data-delay-out="5"
                 data-duration-in=".3" data-animation-in="fadeInLeft" data-delay-in=".7">Apply now</a>
             </div>
@@ -210,7 +220,7 @@
               <h1 class="text-white" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3"
                 data-animation-in="fadeInDown" data-delay-in=".1">Your bright future is our mission</h1>
               <p class="text-muted mb-4" data-animation-out="fadeOutUp" data-delay-out="5" data-duration-in=".3"
-                data-animation-in="fadeInDown" data-delay-in=".4">2023 - 2024 <b>Vijayadasami Admissions Open!</b> Register online at
+                data-animation-in="fadeInDown" data-delay-in=".4">2025 - 2026 <b>Admissions Open!</b> Register online at
                 <i>jayschool.edu.in/admission</i></p>
               <a href="admission.html" class="btn btn-primary" data-animation-out="fadeOutUp" data-delay-out="5"
                 data-duration-in=".3" data-animation-in="fadeInDown" data-delay-in=".7">Apply now</a>
@@ -319,10 +329,10 @@
             <h2 class="section-title">E-DAC Partnership</h2>
             <p>E-DAC Digital is a Technology Integrated System that encourages students to embrace rapidly changing
               worlds and make them ready for tomorrow by building 21st-century skills.</p>
-            <p>We believe in becoming a student’s best friend and a true growth partner in their most crucial learning
+            <p>We believe in becoming a student's best friend and a true growth partner in their most crucial learning
               years by providing a hybrid learning platform.</p>
             <p>We are an amalgamation of technology, media, and curriculum for creating a seamless transformational
-              impact on each and every child’s learning curve. We emphasize conceptual building, critical thinking, and
+              impact on each and every child's learning curve. We emphasize conceptual building, critical thinking, and
               overall personality development through our highly researched, scientific and interesting
               teaching-learning approaches.</p>
           </div>
@@ -440,9 +450,9 @@
     $(window).on('load', function () {
       if (document.cookie.indexOf("ModalShown=true") < 0) {
         $('#noticeModal').modal('show');
-        var expires = (new Date(Date.now() + 1000 * 60 * 60)).toUTCString();
+        // Set cookie to expire after 24 hours
+        var expires = (new Date(Date.now() + 1000 * 60 * 60 * 24)).toUTCString();
         document.cookie = "ModalShown=true; expires=" + expires + ";";
-        // 31 Dec 2023 23:59:59 UTC
       }
     });
   </script>
